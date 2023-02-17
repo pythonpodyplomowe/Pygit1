@@ -1,7 +1,14 @@
 #v1.0 dzialajacej aplikacji
-wiek = input("Podaj wiek uzytkownika: ")
+
+from Reg import Reg
+wiek = input("Podaj wiek uzytkownika:")
+
+reg = input("Select region [EUR] or [USA]:")
+obj_reg = Reg(reg)
+print(obj_reg)
+
 #Sprawdzamy czy podany wiek jest liczba calkowita:
-if wiek.isdigit() == False:
+if wiek.isdigit() is False:
     exit("Wiek musi byc liczba calkowita")
 wiek=int(wiek)
 if wiek>=18 and wiek <=40:
@@ -11,6 +18,7 @@ elif wiek>40:
     print("Prosze korzystac z umiarem")
 else:
     exit("Jestes za mlody/a na alkohol. Zapraszamy na disney.com")
+
 
 plec = input('Podaj plec (kobieta/mezczyzna: )')
 if plec == 'kobieta' and wiek > 30:
