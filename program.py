@@ -1,7 +1,13 @@
 #v1.0 dzialajacej aplikacji
+from Reg import Reg
 wiek = input("Podaj wiek uzytkownika:")
+
+reg = input("Select region [EUR] or [USA]:")
+obj_reg = Reg(reg)
+print(obj_reg)
+
 #Sprawdzamy czy podany wiek jest liczba calkowita:
-if wiek.isdigit() == False:
+if wiek.isdigit() is False:
     exit("Wiek musi byc liczba calkowita")
 wiek=int(wiek)
 if wiek>=18 and wiek <=40:
