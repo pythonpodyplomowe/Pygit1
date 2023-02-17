@@ -1,4 +1,5 @@
 #v1.0 dzialajacej aplikacji
+
 from Reg import Reg
 wiek = input("Podaj wiek uzytkownika:")
 
@@ -18,11 +19,11 @@ elif wiek>40:
 else:
     exit("Jestes za mlody/a na alkohol. Zapraszamy na disney.com")
 
-gender = input("Prosze podac swoja plec K/M: ")
-if "M" == gender:
-    print("Dzien dobry Panu :)")
-elif "K" == gender:
-    print("Dzien dobry Pani :)")
+
+plec = input('Podaj plec (kobieta/mezczyzna: )')
+if plec == 'kobieta' and wiek > 30:
+    print('Pierwszy Aperol Spritz gratis!')
+elif plec == 'mezczyzna' and wiek < 30:
+    print('Jagerbomka gratis!')
 else:
-    print("Prosze wpisac Litere: K - 'Kobieta' lub M - 'Mezczyzna'")
-    
+    exit(' ')
