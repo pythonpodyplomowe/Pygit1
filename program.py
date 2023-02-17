@@ -11,3 +11,12 @@ elif wiek>40:
     print("Prosze korzystac z umiarem")
 else:
     exit("Jestes za mlody/a na alkohol. Zapraszamy na disney.com")
+
+gender = input("Prosze podac swoja plec K/M: ")
+if "M" == gender:
+    print("Dzien dobry Panu :)")
+elif "K" == gender:
+    print("Dzien dobry Pani :)")
+else:
+    print("Prosze wpisac Litere: K - 'Kobieta' lub M - 'Mezczyzna'")
+    
